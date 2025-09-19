@@ -129,4 +129,91 @@
   .card-hover:hover {
     transform: translateY(-5px) scale(1.02);
   }
+
+  /* Casino Specific Styles */
+  .casino-gold {
+    color: #ffd700;
+  }
+  .casino-red {
+    color: #dc2626;
+  }
+  .casino-green {
+    color: #059669;
+  }
+  .casino-dark {
+    background-color: #0f172a;
+  }
+
+  .casino-gradient-gold {
+    background: linear-gradient(135deg, #ffd700, #ffa500, #ff8c00);
+  }
+
+  .casino-gradient-red {
+    background: linear-gradient(135deg, #dc2626, #b91c1c, #991b1b);
+  }
+
+  .casino-gradient-green {
+    background: linear-gradient(135deg, #059669, #047857, #065f46);
+  }
+
+  .casino-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  .casino-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .casino-pulse {
+    animation: pulse-glow 1.5s ease-in-out infinite;
+  }
+
+  .casino-button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .casino-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .casino-text-glow {
+    text-shadow:
+      0 0 10px rgba(255, 215, 0, 0.8),
+      0 0 20px rgba(255, 215, 0, 0.6);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 0 20px rgba(255, 215, 0, 0.8),
+      0 0 30px rgba(255, 215, 0, 0.6);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+  }
 }
