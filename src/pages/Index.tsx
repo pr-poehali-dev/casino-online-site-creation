@@ -96,7 +96,10 @@ const Index = () => {
               <Badge variant="outline" className="neon-border text-casino-neon-cyan animate-pulse-neon">
                 ONLINE: 12,847
               </Badge>
-              <Button className="casino-gradient text-white font-bold neon-border animate-pulse-neon hover:scale-105 transition-transform">
+              <Button 
+                className="casino-gradient text-white font-bold neon-border animate-pulse-neon hover:scale-105 transition-transform"
+                onClick={() => window.open('https://ezca.sh/r/kj8Ds5', '_blank')}
+              >
                 ИГРАТЬ СЕЙЧАС
               </Button>
             </div>
@@ -115,11 +118,20 @@ const Index = () => {
             Самые популярные игры, щедрые бонусы и мгновенные выплаты!
           </p>
           <div className="flex justify-center space-x-4 mb-12">
-            <Button size="lg" className="casino-gradient text-white font-bold text-lg px-8 py-4 neon-border animate-pulse-neon hover:scale-105 transition-transform">
+            <Button 
+              size="lg" 
+              className="casino-gradient text-white font-bold text-lg px-8 py-4 neon-border animate-pulse-neon hover:scale-105 transition-transform"
+              onClick={() => window.open('https://ezca.sh/r/kj8Ds5', '_blank')}
+            >
               <Icon name="Play" size={20} className="mr-2" />
               НАЧАТЬ ИГРУ
             </Button>
-            <Button size="lg" variant="outline" className="neon-border text-casino-neon-cyan border-casino-neon-cyan hover:bg-casino-neon-cyan/10">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="neon-border text-casino-neon-cyan border-casino-neon-cyan hover:bg-casino-neon-cyan/10"
+              onClick={() => window.open('https://ezca.sh/r/kj8Ds5', '_blank')}
+            >
               <Icon name="Gift" size={20} className="mr-2" />
               ПОЛУЧИТЬ БОНУС
             </Button>
@@ -192,6 +204,7 @@ const Index = () => {
                   <Button 
                     variant="outline" 
                     className={`w-full neon-border ${bonus.color} border-current hover:bg-current/10`}
+                    onClick={() => window.open('https://ezca.sh/r/kj8Ds5', '_blank')}
                   >
                     ПОЛУЧИТЬ
                   </Button>
@@ -240,7 +253,10 @@ const Index = () => {
                   <p className="text-muted-foreground mb-4">
                     {game.description}
                   </p>
-                  <Button className="w-full casino-gradient text-white font-bold neon-border hover:scale-105 transition-transform">
+                  <Button 
+                    className="w-full casino-gradient text-white font-bold neon-border hover:scale-105 transition-transform"
+                    onClick={() => window.open('https://ezca.sh/r/kj8Ds5', '_blank')}
+                  >
                     ИГРАТЬ
                   </Button>
                 </CardContent>
